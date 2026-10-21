@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* 
+ * TAREA 6: Layout del Menú
+ * - Cambiar el display de este contenedor a 'grid' o 'flex' para que los platillos queden lado a lado.
+ * - Si usan flex: aplicar 'flex-wrap: wrap' y un 'gap'.
+ * - Si usan grid: definir 'grid-template-columns'.
+ */
+#menu-container {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    /* Implementen sus reglas aquí */
+}
+
+/* 
+ * TAREA 7: Diseño de la Tarjeta del Platillo
+ * - Poner fondo blanco (background-color).
+ * - Suavizar esquinas (border-radius).
+ * - Agregar sombra (box-shadow).
+ * - Cambiar el cursor (cursor: pointer).
+ * - Eliminar el borde negro original.
+ */
+.platillo {
+    border: 1px solid black; 
+    padding: 10px;
+    margin: 5px;
+    /* Implementen sus reglas aquí */
+}
+
+#resumen-orden {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: right;
+}
+
+#btn-ordenar {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-ordenar:hover {
+    background-color: #218838;
+}
