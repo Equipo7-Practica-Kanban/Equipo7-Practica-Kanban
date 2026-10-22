@@ -38,5 +38,14 @@ function guardarComanda(totalOrden) {
      * - Convierte la base de datos a string con JSON.stringify().
      * - Guarda nuevamente usando localStorage.setItem().
      */
-    throw new Error("Equipo: implementen guardarComanda");
+    const db = JSON.parse(localStorage.getItem('restauranteDB')) || { menu: [], comandas: [] };
+    const nuevaComanda = {
+        fecha: new Date(),
+        total: totalOrden
+    };
+    if (!db.comandas) {
+        db.comandas = [];
+    }
+    db.comandas.push(nuevaComanda);
+    localStorage.setItem('restauranteDB', JSON.stringify(db));
 }
