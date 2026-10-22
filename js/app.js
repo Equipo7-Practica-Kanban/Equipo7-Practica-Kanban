@@ -36,7 +36,8 @@ function sumarTotal(precio) {
      * - Suma el parámetro 'precio' a la variable global 'totalActual'.
      * - Actualiza el texto del elemento HTML con id 'total' para reflejar el nuevo valor.
      */
-    throw new Error("Equipo: implementen sumarTotal");
+    totalActual += precio;
+    document.getElementById('total').textContent = totalActual.toFixed(2);
 }
 
 
