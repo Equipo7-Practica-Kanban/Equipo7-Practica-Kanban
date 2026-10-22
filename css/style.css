@@ -34,10 +34,37 @@ header h1 {
  * - Eliminar el borde negro original.
  */
 .platillo {
-    border: 1px solid black; 
-    padding: 10px;
-    margin: 5px;
-    /* Implementen sus reglas aquí */
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    user-select: none;
+}
+
+.platillo:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+    border-color: #cbd5e1;
+}
+
+.platillo:active {
+    transform: translateY(0);
+}
+
+.platillo h3 {
+    margin: 0 0 8px 0;
+    color: #1e293b;
+    font-size: 1.1rem;
+}
+
+.platillo p {
+    margin: 0;
+    color: #059669;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 #resumen-orden {
