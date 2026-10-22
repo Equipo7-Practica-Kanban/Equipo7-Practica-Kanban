@@ -20,7 +20,9 @@ header h1 {
     border: 2px dashed #ccc;
     padding: 20px;
     margin-bottom: 20px;
-    /* Implementen sus reglas aquí */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
 }
 
 /* 
