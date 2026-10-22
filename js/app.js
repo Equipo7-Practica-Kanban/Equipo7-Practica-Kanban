@@ -13,7 +13,19 @@ function cargarMenu() {
      * - Debe asignar un evento onclick al <div> que llame a sumarTotal(precio).
      * - Agrega el <div> al contenedor.
      */
-    throw new Error("Equipo: implementen cargarMenu");
+    const menu = obtenerMenu();
+    const contenedor = document.getElementById('menu-container');
+    contenedor.innerHTML = '';
+
+    menu.forEach(platillo => {
+        const div = document.createElement('div');
+        div.className = 'platillo';
+        div.innerHTML = `<h3>${platillo.nombre}</h3><p>$${platillo.precio.toFixed(2)}</p>`;
+        div.onclick = function() {
+            sumarTotal(platillo.precio);
+        };
+        contenedor.appendChild(div);
+    });
 }
 
 
