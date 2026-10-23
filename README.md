@@ -1,5 +1,8 @@
 # Kanban- Restaurante
 
+> 📋 **Tablero Kanban del Proyecto (Equipo 7):**  
+> 👉 **[Abrir Tablero en GitHub Projects](https://github.com/users/raulragde/projects/2)**
+
 ## Actividades Esperadas (Práctica de 3 días)
 *   **Día 1:** El líder hace el *Fork*, crea el tablero Kanban en la pestaña "Projects" (Columnas: *Backlog, Desarrollo, Revisión, Hecho*), definen su límite WIP y comienzan a programar.
 *   **Día 2:** Programan las funcionalidades en JavaScript/CSS gestionando visualmente cualquier bloqueo en el tablero.
